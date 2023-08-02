@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeShop</title>
+    <link rel="stylesheet" href="../style/heading.css">
+    <link rel="stylesheet" href="./cartStyle.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">MeShop</div>
+            <div class="links-section">
+                <ul>
+                    <li><a href="../mainContent/index.html">Main Menu</a></li>
+                    <li><a href="../profile/profile.html">Profile</a></li>
+                    <li><a href="#" id="logoutBtn">Log out</a></li>
+                </ul>
+            </div>
+        </div>   
+    </header>
+    <main>
+        <div id="cart-card">
+            <div class="cart-heading">Cart</div>
+            <div id="cart-item">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="table-no">SR No.</th>
+                            <th class="table-name">NAME</th>
+                            <th class="table-price">PRICE</th>
+                        </tr>    
+                    </thead>
+                    <tbody id="cart-item-body">
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>ndknnansakndnad</td>
+                            <td>100</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="cart-total-amt">
+                <p>Total Amount</p>
+                <p id="totalAmt">$0.00</p>
+            </div>
+        </div>
+        <button type="button" id="buyBtn">Buy Item</button>
+    </main>
+    <footer></footer>
+    <script src="./cartScript.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</body>
+</html>

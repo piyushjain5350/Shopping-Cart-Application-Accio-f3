@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signup-container{
+    margin: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+
+.signup-container #signUpForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+#signUpBtn{
+    width: 10%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

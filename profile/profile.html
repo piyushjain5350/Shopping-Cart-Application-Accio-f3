@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeShop</title>
+    <link rel="stylesheet" href="../style/heading.css">
+    <link rel="stylesheet" href="profileStyle.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">MeShop</div>
+            <div class="links-section">
+                <ul>
+                    <li><a href="../mainContent/index.html">Main Menu</a></li>
+                    <li><a href="./dummy/dummyCart/cart.html">MyCart</a></li>
+                    <!-- <li><a href="#">Log out</a></li> -->
+                </ul>
+            </div>
+        </div>    
+    </header>
+    <main>
+        <div id="message-container"></div>
+        <h1>My Profile</h1>
+        <div class="container">
+            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+            <input type="button" value="Save Info" id="saveInfoBtn" class="btn">
+        </div>
+        <h1>Edit Password</h1>
+        <div class="container">
+            <input type="password" name="oldPassword" id="oldPassword" placeholder="Old Password">
+            <input type="password" name="newPassword" id="newPassword"  placeholder="New Password">
+            <input type="password" name="cnfNewPassword" id="cnfNewPassword" placeholder="Confirm New Password">
+
+            <input type="button" value="change Password" id="changePasswordBtn" class="btn">
+            <input type="button" value="Log out" id="logoutBtn" class="btn">
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./profileScript.js"></script>
+</body>
+</html>

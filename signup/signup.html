@@ -1,0 +1,55 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MeShop</title>
+        <link rel="stylesheet" href="../style/heading.css">
+        <link rel="stylesheet" href="./signupStyle.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="logo-section">MeShop</div>
+                <div class="links-section">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../login/login.html">Login</a></li>
+                        <!-- <li><a href="#">Signup</a></li> -->
+                        <!-- <li><a href="#">MyCart</a></li> -->
+                        <!-- <li><a href="#">Profile</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="signup-container">
+                <h1>Sign Up</h1>
+                <div id="errorContainer"></div>
+                <form id="signUpForm">
+                    <div>
+                        <input type="text" placeholder="First Name" id="firstName">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Last Name" id="lastName">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email" id="emailInput">
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Password" id="password">
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Confirm Password" id="cnfPassword">
+                    </div>
+                    <div>
+                        <input type="button" value="SignUp" id="signUpBtn">
+                    </div>
+
+                </form>
+            </div>
+        </main>
+        <footer></footer>   
+        <script src="./signupScript.js"></script>
+    </body>
+    </html>

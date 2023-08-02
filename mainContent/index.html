@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeShop</title>
+    <link rel="stylesheet" href="../style/heading.css">
+    <link rel="stylesheet" href="./mainContentStyle.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">MeShop</div>
+            <div class="links-section">
+                <ul>
+                    <li><a href="../cart/cart.html">MyCart</a></li>
+                    <li><a href="../profile/profile.html">Profile</a></li>
+                    <li><a href="#" id="logoutBtn">Log out</a></li>
+                </ul>
+            </div>
+        </div>    
+    </header>
+    <main>
+        <aside id="filter-section">
+            <div class="colors">
+                <p>Colors</p>
+                <label><input type="checkbox"   value="red" id="red" /> Red</label><br>
+                <label><input type="checkbox"   value="blue" id="blue" /> Blue</label><br>
+                <label><input type="checkbox"   value="green" id="green" /> Green</label><br>
+                <label><input type="checkbox"   value="black" id="black" /> Black</label><br>
+                <label><input type="checkbox"   value="white" id="white" /> White</label><br>
+            </div>
+            <hr>
+            <div class="sizes">
+                <p>Sizes</p>
+                <label><input type="checkbox"  value="s" id="s" /> S</label><br>
+                <label><input type="checkbox"  value="m" id="m" /> M</label><br>
+                <label><input type="checkbox"  value="l" id="l" /> L</label><br>
+                <label><input type="checkbox"  value="xl" id="xl" /> XL</label><br>
+            </div>
+            <hr>
+            <div class="rating">
+                <p>Rating</p>
+                <div>
+                <span>0</span>
+                <input type="range" id="rating" min="0" max="5" value="0">
+                <span>5</span>
+                </div>
+            </div>
+            <hr>
+            <div class="prices">
+                <p>Price Range</p>
+                <label><input type="checkbox" id="range1" data-range="25" /> $0 to $25</label><br>
+                <label><input type="checkbox" id="range2" data-range="50" /> $25 to $50</label><br>
+                <label><input type="checkbox" id="range3" data-range="100" /> $50 to $100</label><br>
+                <label><input type="checkbox" id="range4" data-range="500" /> $100 onwards</label><br>
+            </div>
+            <button id="applyFilter">Apply Filter</button>
+        </aside>
+        <div class="main-section">
+            <div class="search-bar" >
+                <img src="../assets/search.png" alt="search">
+                <input type="text" id="search-input" placeholder="Search">
+            </div>
+            <div class="item-by-category">
+                <button type="button" id="allFilterBtn">All</button>
+                <button type="button" id="mensFilterBtn">Men</button>
+                <button type="button" id="womenFilterBtn">Women</button>
+                <button type="button" id="jeweleryFilterBtn">Jewelery</button>
+                <button type="button" id="electronicsFilterBtn">Electronics</button>
+            </div>
+            <h2 id="mens-heading">Men's Clothing</h2>
+            <div id="men-items" class="items-card">
+                <!-- <div class="card">
+                    <div class="card-img">
+                        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="img">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</div>
+                        <div class="card-price-size">
+                            <p class="card-price">$100</p>
+                            <p class="card-size">S,M,L</p>
+                        </div>
+                        <div class="card-color">
+                            <p>Colors</p>
+                        </div>
+                        <div class="card-rating">
+                            <p>Rating:</p>
+                        </div>
+                    </div>
+                    <div class="card-button"><button type="button">Add To Cart</button></div>
+                </div> -->
+            </div>
+            <h2 id="women-heading">Women's Clothing</h2>
+            <div id="women-items" class="items-card"></div>
+            <h2 id="jewelery-heading">Jewelery</h2>
+            <div id="jewelery-items" class="items-card"></div>
+            <h2 id="electronics-heading">Electronics</h2>
+            <div id="electronic-items" class="items-card"></div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./mainContentScript.js"></script>
+</body>
+</html>

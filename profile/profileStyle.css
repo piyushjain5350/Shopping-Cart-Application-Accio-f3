@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    padding: 10px 40px;
+}
+h1{
+    text-align: center;
+    /* font-size: ; */
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin: 10px 0;
+}
+.container input{
+    line-height: 30px;
+    padding: 10px;
+    font-size: 16px;
+}
+.container .btn{
+    width: 20%;
+    color: white;
+    background-color: black;
+    border:none;
+    outline: none;
+    cursor:pointer;
+    border-radius: 5px;
+}

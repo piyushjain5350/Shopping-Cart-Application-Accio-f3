@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body-heading-section{
+    position: relative;
+    font-size: 10px;
+    margin: 50px;
+    z-index: 1000;
+}
+.body-heading-section #body-main-heading{
+    font-size: 5em;
+}
+.body-heading-section p{
+    font-size: 3em;
+}
+main{
+    position: relative;
+}
+.body-banner{
+    position: absolute;
+    right: 0;
+    top: -40px;
+}
+.body-banner img{
+    width: 800px;
+    height: 600px;
+}
